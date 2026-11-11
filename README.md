@@ -74,11 +74,20 @@
 
 ###
 
-<div data-importer="music" align="center">
-  <a href="https://open.spotify.com/user/21ur2gstabc6i4xwx54n4qfjq">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=21ur2gstabc6i4xwx54n4qfjq&count=5" alt="Spotify recently played"  />
-  </a>
-</div>
+<table align="center">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="https://open.spotify.com/user/21ur2gstabc6i4xwx54n4qfjq">
+        <img src="https://spotify-recently-played-readme.vercel.app/api?user=21ur2gstabc6i4xwx54n4qfjq&amp;count=5" width="400" alt="Spotify recently played" />
+      </a>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="https://myanimelist.net/animelist/Saitsune?status=1">
+        <img src="assets/currently-watching.svg" width="400" alt="Saitsune's currently watching anime on MyAnimeList" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ###
 
