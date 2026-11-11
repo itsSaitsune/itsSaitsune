@@ -66,7 +66,7 @@ jobs:
                   raise ValueError("Unexpected image content type")
               return "data:" + mime + ";base64," + base64.b64encode(data).decode()
           
-          logo = 'data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMWRiOTU0IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TXlBbmltZUxpc3Q8L3RpdGxlPjxwYXRoIGQ9Ik0xNC45MjEgNi40NzljLS44MiAwLTMuNjgzIDAtNC45NDcgMy4xNTYtLjY2MiAxLjY1Mi0uOTg2IDQuODEyLjg3NiA3Ljg4NmwxLjkzNC0xLjQxcy0uNzY3LTEuMDk1LTEuMDgzLTMuMTkxaDIuODk3bC4wMjIgMy4xOWgyLjYwNFY4LjgzNWgtMi41ODF2Mi4wNDNsLTIuNDYtLjAyM3MuNDEzLTIuNDA4IDIuODc3LTIuMzM2aDIuNDU0bC0uNTcyLTIuMDRaTTAgNi41Mjh2OS42MjRoMi4zNDh2LTUuODRsMi4wMzEgMi42NjQgMi4wNDctMi42NTJ2NS44MjhoMi4zMzZWNi41MjhINi40MzdMNC4zNjggOS40NzQgMi4zMSA2LjUyOFptMTguNDQ3LjAyMnY5LjU4M2g1LjAyMkwyNCAxNC4wOWgtMy4yMzJWNi41NVoiLz48L3N2Zz4='
+          logo = 'data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMmU1MWEyIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TXlBbmltZUxpc3Q8L3RpdGxlPjxwYXRoIGQ9Ik0xNC45MjEgNi40NzljLS44MiAwLTMuNjgzIDAtNC45NDcgMy4xNTYtLjY2MiAxLjY1Mi0uOTg2IDQuODEyLjg3NiA3Ljg4NmwxLjkzNC0xLjQxcy0uNzY3LTEuMDk1LTEuMDgzLTMuMTkxaDIuODk3bC4wMjIgMy4xOWgyLjYwNFY4LjgzNWgtMi41ODF2Mi4wNDNsLTIuNDYtLjAyM3MuNDEzLTIuNDA4IDIuODc3LTIuMzM2aDIuNDU0bC0uNTcyLTIuMDRaTTAgNi41Mjh2OS42MjRoMi4zNDh2LTUuODRsMi4wMzEgMi42NjQgMi4wNDctMi42NTJ2NS44MjhoMi4zMzZWNi41MjhINi40MzdMNC4zNjggOS40NzQgMi4zMSA2LjUyOFptMTguNDQ3LjAyMnY5LjU4M2g1LjAyMkwyNCAxNC4wOWgtMy4yMzJWNi41NVoiLz48L3N2Zz4='
           def cover(item):
               try:
                   return embed_image(item.get("anime_image_path", ""))
@@ -82,7 +82,7 @@ jobs:
                    '<rect x=".5" y=".5" width="399" height="327" rx="10" fill="#151b23" stroke="#2a323d"/>',
                    '<g font-family="Segoe UI,Arial,sans-serif">',
                    f'<image x="16" y="12" width="25" height="25" href="{logo}"/>',
-                   '<text x="47" y="30" fill="#1db954" font-size="14" font-weight="600">MyAnimeList</text>',
+                   '<text x="47" y="30" fill="#2e51a2" font-size="14" font-weight="600">MyAnimeList</text>',
                    '<text x="139" y="30" fill="#e9eef5" font-size="16" font-weight="600">Currently Watching</text>',
                    '<path d="M16 48H384" stroke="#232b36"/>']
           for index, (item, image) in enumerate(zip(entries[:5], covers)):
