@@ -66,7 +66,7 @@ jobs:
                   raise ValueError("Unexpected image content type")
               return "data:" + mime + ";base64," + base64.b64encode(data).decode()
           
-          logo = embed_image("https://cdn.simpleicons.org/myanimelist/1db954")
+          logo = 'data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMWRiOTU0IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TXlBbmltZUxpc3Q8L3RpdGxlPjxwYXRoIGQ9Ik0xNC45MjEgNi40NzljLS44MiAwLTMuNjgzIDAtNC45NDcgMy4xNTYtLjY2MiAxLjY1Mi0uOTg2IDQuODEyLjg3NiA3Ljg4NmwxLjkzNC0xLjQxcy0uNzY3LTEuMDk1LTEuMDgzLTMuMTkxaDIuODk3bC4wMjIgMy4xOWgyLjYwNFY4LjgzNWgtMi41ODF2Mi4wNDNsLTIuNDYtLjAyM3MuNDEzLTIuNDA4IDIuODc3LTIuMzM2aDIuNDU0bC0uNTcyLTIuMDRaTTAgNi41Mjh2OS42MjRoMi4zNDh2LTUuODRsMi4wMzEgMi42NjQgMi4wNDctMi42NTJ2NS44MjhoMi4zMzZWNi41MjhINi40MzdMNC4zNjggOS40NzQgMi4zMSA2LjUyOFptMTguNDQ3LjAyMnY5LjU4M2g1LjAyMkwyNCAxNC4wOWgtMy4yMzJWNi41NVoiLz48L3N2Zz4='
           def cover(item):
               try:
                   return embed_image(item.get("anime_image_path", ""))
